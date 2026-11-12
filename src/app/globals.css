@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ocean: #404bbf;
+  --color-iris: #4d5ae5;
+  --color-navy-blue: #2e2f42;
+  --color-white: #ffffff;
+  --color-cloud: #f4f4fd;
+  --color-slate: #434455;
+}
+
+@layer base {
+  * {
+    @apply box-border;
+  }
+
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply m-0 min-h-screen bg-white text-navy-blue;
+  }
+
+  section {
+    @apply mx-auto max-w-7xl;
+  }
+
+  img {
+    @apply block max-w-full;
+  }
+
+  a,
+  span,
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply tracking-[0.02em];
+  }
+
+  button {
+    @apply cursor-pointer;
+  }
+}
